@@ -11,7 +11,7 @@ import android.widget.Toast;
  */
 
 public class SeekBarEx extends AppCompatActivity {
-    SeekBar seekBar;
+    private SeekBar seekBar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

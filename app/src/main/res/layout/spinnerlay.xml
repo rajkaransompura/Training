@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Country To View Capital :"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_margin="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txt1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capital :"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@id/spinner"
+        android:id="@+id/txt2"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtcapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="85dp"
+        android:textSize="18dp"
+        android:text="capital"
+        android:textColor="@color/pink"
+        android:layout_below="@id/txt2"/>
+
+</RelativeLayout>

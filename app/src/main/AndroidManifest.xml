@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="raj.rkscode.training">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,11 +26,70 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RatingBarEx"/>
-        <activity android:name=".AllTasks"/>
-        <activity android:name=".SeekBarEx"/>
-        <activity android:name=".TimePickEx"/>
-        <activity android:name=".TimePickEx1"/>
+        <activity
+            android:name=".EmailEx"
+            android:label="Email Service" />
+        <activity
+            android:name=".SmsEx"
+            android:label="SMS Service" />
+        <activity
+            android:name=".RatingBarEx"
+            android:label="Rating Bar Example" />
+        <activity
+            android:name=".AllTasks"
+            android:label="Training" />
+        <activity
+            android:name=".SeekBarEx"
+            android:label="Seek Bar Example" />
+        <activity
+            android:name=".TimePickEx"
+            android:label="Time Picker" />
+        <activity
+            android:name=".TimePickEx1"
+            android:label="Time Picker" />
+        <activity
+            android:name=".DatePickerEx"
+            android:label="Date Picker" />
+        <activity
+            android:name=".ProgressBarEx"
+            android:label="Progress Bar" />
+        <activity
+            android:name=".AlertBoxEx"
+            android:label="Alert Box" />
+        <activity
+            android:name=".AcTextView"
+            android:label="Autocomplete Text" />
+        <activity
+            android:name=".SpinnerEx"
+            android:label="Spinner" />
+        <activity
+            android:name=".MenusEx"
+            android:label="Menu Examples" />
+        <activity
+            android:name=".IntAct1"
+            android:label="Activity 1" />
+        <activity
+            android:name=".IntAct2"
+            android:label="Activity2" />
+        <activity
+            android:name=".ActBarEx"
+            android:label="ActionBar" />
+        <activity
+            android:name=".Locationfound"
+            android:label="Location Finding" />
+        <activity
+            android:name=".PhoneCallEx"
+            android:label="Phone Call" />
+        <activity android:name=".RecycleEx"
+            android:label="Recycler View" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyANk0_PUiV3H0n-aW49619exIRtVPoZFvY" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
     </application>
 
 </manifest>

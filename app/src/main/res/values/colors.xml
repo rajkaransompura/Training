@@ -4,5 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="indigo">#b700ff</color>
-    <color name="pink">#f703e3</color>
+    <color name="pink">#ff7cf4</color>
+    <color name="yellow">#fad100</color>
+    <color name="cyan">#00fad0</color>
+    <color name="green">#00ff19</color>
+    <color name="blue">#0004ff</color>
+    <color name="black">#000000</color>
 </resources>

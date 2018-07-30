@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/sms_num"
+        android:ems="13"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/call_hint"
+        android:gravity="center_horizontal"
+        android:layout_margin="25dp"/>
+
+    <EditText
+        android:id="@+id/sms_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sms_num"
+        android:layout_centerHorizontal="true"
+        android:ems="13"
+        android:gravity="center"
+        android:lines="5"
+        android:hint="Write your massege here" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sms_msg"
+        android:layout_centerHorizontal="true"
+        android:text="Send"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>

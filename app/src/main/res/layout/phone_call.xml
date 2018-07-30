@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hintcalltxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Mobile Number to Call"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/phone_num"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hintcalltxt"
+        android:digits="10"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/call_hint"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/make_call_btn"
+        android:text="Call"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hintcalltxt"
+        android:layout_toEndOf="@id/phone_num"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/phone_num" />
+
+</RelativeLayout>

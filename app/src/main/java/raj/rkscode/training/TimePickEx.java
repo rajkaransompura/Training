@@ -14,10 +14,10 @@ import java.util.Calendar;
  */
 
 public class TimePickEx extends AppCompatActivity {
-    TextView showtime;
-    TimePicker timePicker;
-    Calendar calendar;
-    String formate = "";
+    private TextView showtime;
+    private TimePicker timePicker;
+    private Calendar calendar;
+    private String formate = "";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

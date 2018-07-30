@@ -13,9 +13,9 @@ import android.widget.TimePicker;
  */
 
 public class TimePickEx1 extends AppCompatActivity {
-    TimePicker timePicker1;
-    Button set;
-    TextView seetime;
+    private TimePicker timePicker1;
+    private Button set;
+    private TextView seetime;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

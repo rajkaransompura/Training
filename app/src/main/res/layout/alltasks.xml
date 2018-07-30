@@ -5,48 +5,144 @@
     android:background="#efefef">
 
     <Button
+        android:id="@+id/rating_bar_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/rating_bar"
         android:text="Rating Bar"
         android:layout_margin="10dp"/>
 
     <Button
-        android:id="@+id/seek_bar"
+        android:id="@+id/seek_bar_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/rating_bar"
-        android:layout_alignBottom="@+id/rating_bar"
-        android:layout_toEndOf="@+id/rating_bar"
-        android:layout_toRightOf="@+id/rating_bar"
-        android:text="Seekbar" />
+        android:layout_alignTop="@+id/rating_bar_btn"
+        android:layout_toEndOf="@+id/rating_bar_btn"
+        android:text="Seekbar"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/rating_bar_btn" />
 
     <Button
-        android:id="@+id/time_picker"
-        android:layout_margin="10dp"
+        android:id="@+id/time_picker_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rating_bar_btn"
+        android:layout_toEndOf="@+id/seek_bar_btn"
         android:text="Time Picker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/seek_bar"
-        android:layout_alignBottom="@+id/seek_bar"
-        android:layout_toEndOf="@+id/seek_bar"
-        android:layout_toRightOf="@+id/seek_bar" />
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/seek_bar_btn" />
 
     <Button
+        android:id="@+id/date_picker_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date Picker"
-        android:layout_below="@id/rating_bar"
+        android:layout_below="@id/rating_bar_btn"
         android:layout_marginLeft="10dp"
-        android:id="@+id/date_picker"/>
+        android:layout_marginRight="10dp"/>
 
     <Button
-        android:id="@+id/progress_bar"
+        android:id="@+id/progress_bar_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/time_picker"
-        android:layout_toEndOf="@+id/rating_bar"
-        android:layout_toRightOf="@+id/rating_bar"
-        android:text="ProgressBar" />
+        android:layout_alignTop="@id/date_picker_btn"
+        android:layout_toRightOf="@id/date_picker_btn"
+        android:layout_marginEnd="10dp"
+        android:text="ProgressBar"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/alert_box_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/date_picker_btn"
+        android:layout_toRightOf="@+id/progress_bar_btn"
+        android:text="AlertBox" />
+
+    <Button
+        android:id="@+id/actextview_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rating_bar_btn"
+        android:layout_below="@id/date_picker_btn"
+        android:layout_marginTop="10dp"
+        android:text="AutoC TextView"
+        android:layout_alignLeft="@+id/rating_bar_btn" />
+
+    <Button
+        android:id="@+id/spinner_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/progress_bar_btn"
+        android:layout_alignTop="@+id/actextview_btn"
+        android:text="Spinner"
+        android:layout_alignRight="@+id/progress_bar_btn" />
+
+    <Button
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menus"
+        android:layout_toEndOf="@id/spinner_btn"
+        android:layout_below="@id/date_picker_btn"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/spinner_btn" />
+
+    <Button
+        android:id="@+id/int_share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent Share"
+        android:layout_below="@id/actextview_btn"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/actionbar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Action Bar"
+        android:layout_below="@id/actextview_btn"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/int_share_btn"
+        android:layout_toRightOf="@id/int_share_btn" />
+
+    <Button
+        android:id="@+id/call_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone call"
+        android:layout_below="@id/actextview_btn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/actionbar_btn"
+        android:layout_toRightOf="@id/actionbar_btn" />
+
+    <Button
+        android:id="@+id/sms_btn"
+        android:text="SMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/int_share_btn"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/email_btn"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar_btn"
+        android:layout_toEndOf="@id/sms_btn"
+        android:layout_toRightOf="@id/sms_btn" />
+
+    <Button
+        android:id="@+id/recycle_btn"
+        android:text="Recycler View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/int_share_btn"
+        android:layout_toEndOf="@id/email_btn"
+        android:layout_toRightOf="@id/email_btn" />
 
 </RelativeLayout>

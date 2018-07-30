@@ -15,8 +15,8 @@ import android.widget.Toast;
 
 public class RatingBarEx extends AppCompatActivity {
 
-    Button button;
-    RatingBar ratingBar;
+    private Button button;
+    private RatingBar ratingBar;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
